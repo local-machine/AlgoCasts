@@ -7,6 +7,28 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// Utilizes .reverse() 
+// 
+// function palindrome(str) {
+//   const flipItAndReverseIt = str.split("").reverse().join("");
+//   if (str === flipItAndReverseIt){    
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// Not the most effective for .every()
+// Does a bool check on every value in an arr.
+// Uses double comparison, not the most efficient.
+function palindrome(str) {
+  return str.split("").every((char, i) => {
+    return char === str[str.length -i -1];
+  });
+}
+
+// function palindrome(str) {}
+
+// function palindrome(str) {}
 
 module.exports = palindrome;
