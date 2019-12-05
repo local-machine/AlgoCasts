@@ -6,7 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-// Long way .reverse()
+// Long way for .reverse()
 // function reverse(str) {
 //   const arr = str.split('');
 //   arr.reverse();

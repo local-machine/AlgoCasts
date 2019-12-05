@@ -8,6 +8,18 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+// Regular function
+function reverseInt(n) {
+  const revered = n
+      .toString()
+      .split('')
+      .reverse()
+      .join('')
+
+  return parseFloat(revered) * Math.sign(n);
+}
+
+// Arrow function
+// const reverseInt = (n) => parseFloat(n.toString().split('').reverse().join('')) * Math.sign(n);
 
 module.exports = reverseInt;
