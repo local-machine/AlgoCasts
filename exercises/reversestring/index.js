@@ -6,7 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-// Long way for .reverse()
+// Long and ugly .reverse()
 // function reverse(str) {
 //   const arr = str.split('');
 //   arr.reverse();
@@ -15,7 +15,7 @@
 
 module.exports = reverse;
 
-// Short way .reverse()
+// Short .reverse()
 // function reverse(str) {
 //   return str
 //     .split('')
@@ -23,11 +23,12 @@ module.exports = reverse;
 //     .join('');
 // }
 
-//  Forof Loop
+//  For-of Loop
 // function reverse(str) {
 //   let reversed = '';
-//   for (let character of str) {
-//     reversed = character + reversed;
+
+//   for (let index of str) {
+//     reversed = index + reversed;
 //   }
 //   return reversed;
 // }
@@ -40,6 +41,6 @@ module.exports = reverse;
 // }
 
 // Short way .reduce()
-function reverse(str) {
-  return str.split('').reduce((rev, char) => char + rev, '');
-}
+// function reverse(str) {
+//   return str.split('').reduce((rev, char) => char + rev, '');
+// }
